@@ -6,24 +6,24 @@ const TEST_EMAIL = "sabKut73328@stud.noroff.no";
 // const TEST_BAD_EMAIL = "sabKut@stud.noroff.no";
 const TEST_PASSWORD = "kukuku16";
 
-const TEST_PROFILE = {
-  name: "Sabina",
-  email: TEST_EMAIL,
-  banner: null,
-  avatar: "http://images.clipartpanda.com/summer-clip-art-9ipekbAiE.jpeg",
-};
+// const TEST_PROFILE = {
+//   name: "Sabina",
+//   email: TEST_EMAIL,
+//   banner: null,
+//   avatar: "http://images.clipartpanda.com/summer-clip-art-9ipekbAiE.jpeg",
+// };
 
 const key = "token";
 const token = "123abc";
 
-// function fetchSuccess() {
-//   return Promise.resolve({
-//     ok: true,
-//     status: 200,
-//     statusText: "OK",
-//     json: () => Promise.resolve(TEST_PROFILE),
-//   });
-// }
+function fetchSuccess() {
+  return Promise.resolve({
+    ok: true,
+    status: 200,
+    statusText: "OK",
+    json: () => Promise.resolve(TEST_PROFILE),
+  });
+}
 
 // function fetchFailure(
 //   status = 401,
