@@ -24,7 +24,7 @@ function fetchSuccess() {
     json: () => Promise.resolve(TEST_PROFILE),
   });
 }
-
+//Can not check with invalid password or email, because can not ckeck with throws Error. Return anonymous, so can not figure  out how to do this test.
 // function fetchFailure(
 //   status = 401,
 //   statusText = "Either your username was not found or your password is incorrect"
